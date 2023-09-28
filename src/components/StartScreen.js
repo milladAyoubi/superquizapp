@@ -4,7 +4,7 @@ const StartScreen = ({ startQuiz, quizData }) => {
   return (
     <div className="start-screen">
       <h2>Start Super Quiz!</h2>
-      <p>Lorem Ipsum set Amut</p>
+      <p>Welcome to the Technical Test for Creatubbles!</p>
       <button onClick={startQuiz}>Start</button>
     </div>
   );
