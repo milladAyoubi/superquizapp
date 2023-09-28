@@ -29,22 +29,26 @@ const Question = ({ question, totalQuestions, currentQuestion, correctAnswers, s
         }
 
         console.log('currentQuestion:', currentQuestion);
-       
         console.log('option:', option);
 
 
-        setTimeout(()=> {
             setAnswer(option)
+            setOption(null)
 
-        },10000)
-
-        setOption(null)
 
     };
 
     useEffect(() => {
-       timer.current = setTimeout(nextQuestion)
-    }, [currentQuestion]);
+        if (currentQuestion !== null) {
+          // Clear the previous timer if there was one
+          if (timer.current) {
+            clearTimeout(timer.current);
+          }
+    
+          timer.current = setTimeout(nextQuestion, 8000);
+        }
+      }, [currentQuestion, option]);
+    
 
     return (
         <div className='question-container'>

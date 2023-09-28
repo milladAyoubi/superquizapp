@@ -48,7 +48,8 @@ const MainScreen = ({quizData, retryQuiz}) => {
                     setAnswer={(index)=> {
                         setAnswerdQuestions((arr)=>{
                         const newArray = [...arr ];
-                        newArray[currentQuestion-1] = index;
+                        newArray[currentQuestion] = index;
+                        console.log(newArray)
                         return newArray
                     })
                     setCurrentQuestion(currentQuestion+1)
