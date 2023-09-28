@@ -1,14 +1,12 @@
-import logo from './logo.svg';
-import { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import QuizContainer from './components/QuizContainer';
+import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
+import QuizContainer from "./components/QuizContainer";
 
 function App() {
   return (
     <div>
-
-    <Navbar/>
-    <QuizContainer/>
+      <Navbar />
+      <QuizContainer />
     </div>
   );
 }
