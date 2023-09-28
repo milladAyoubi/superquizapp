@@ -67,10 +67,6 @@ const Question = ({ question, totalQuestions, currentQuestion, correctAnswers, s
                     <h3>{question.question}</h3>
                 </div>
 
-
-
-
-
                 <div className='question-image'>
                         <img src={question.imageUrl} alt='' width={410} height={410}/>
                 </div>
